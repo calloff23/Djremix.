@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto DJ Remix - By Sharewin A. Ruiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Auto DJ Remix</h1>
+        <h3>Made by Sharewin A. Ruiz, TVL 12 Student from Nicolite Montessori School</h3>
+        <p>Experience a seamless way to remix your MP3 files with smooth effects, tempo changes, and professional-grade features. This tool provides an easy 3-step process to create your personalized DJ-style remix.</p>
+        
+        <!-- Menu Section -->
+        <div class="menu">
+            <button id="uploadButton">1. Upload File</button>
+            <button id="remixButton" disabled>2. Remix File</button>
+            <button id="downloadButton" disabled>3. Download Remix</button>
+        </div>
+
+        <input type="file" id="audioFile" accept="audio/mp3" hidden>
+        <a id="downloadLink" style="display: none;" download="remixed.mp3">Download Remix</a>
+
+        <!-- Tutorial Section -->
+        <div id="tutorial">
+            <h2>How to Use</h2>
+            <p>Follow these simple steps to remix your audio file:</p>
+            <ol>
+                <li>Click "Upload File" to select an MP3 file from your device.</li>
+                <li>Click "Remix File" to apply automatic remix effects.</li>
+                <li>Click "Download Remix" to save the remixed file to your device.</li>
+            </ol>
+            <p>Enjoy smooth animations and responsive functionality!</p>
+        </div>
+
+        <p id="status">No file uploaded yet.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
